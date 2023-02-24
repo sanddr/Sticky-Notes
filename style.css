@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+
+
+body{
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  radial-gradient(#ac5230 0.5px, transparent 0.5px), radial-gradient(#ac5230 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    margin: 0;
+}
+
+#nav{
+    margin-top: 0;
+    margin: auto;
+}
+
+#create-note{
+    margin: 0 70px;
+    height: 50px;
+    width: 150px;
+    font-size: 1rem;
+    font-family: 'Shantell Sans', cursive;
+    cursor: pointer;
+    background-color: green;
+    border: none;
+    color: white;
+}
+
+#empty-note{
+    height: 230px;
+    width: 230px;
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: 15px;
+    border: none;
+    box-shadow: 3px 3px 5px 5px grey;
+    display: none;
+}
+
+#user-input{
+    height: 210px;
+    width: 225px;
+    resize: none;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Shantell Sans', cursive;
+    outline: none;
+}
+
+#note-buttons{
+    margin-left: 180px;
+    margin-bottom: 3px;
+    color: rgb(187, 184, 184);
+    cursor: pointer;
+    font-size: 20px;
+}
+.fa-circle-xmark:hover{
+    color: rgba(255, 0, 0, 0.555);
+}
+.fa-circle-check:hover{
+    color: rgba(26, 158, 26, 0.717);
+}
+
+#all-notes{
+    height: 90vh;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.single-note{
+    height: 250px;
+    width: 230px;
+    margin: 10px;
+    background-color: aliceblue;
+    border: none;
+    box-shadow: 5px 5px 5px grey;
+    padding: 10px 20px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    transform: rotate(-10deg);
+    word-break: break-all;
+}
+.single-note:hover{
+    padding: 5px 20px 30px 30px;
+    margin: 5px;
+}
+
+.single-note-nav{
+    margin-left: 225px;
+    font-size: 20px;
+    color: rgba(128, 128, 128, 0.691);
+    cursor: pointer;
+}
+
+.user-note{
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 10px;
+}
+
+.delete-note{
+    color: rgba(228, 225, 225, 0.918);
+}
